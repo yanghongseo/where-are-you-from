@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stone Archive</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 24px;
+      background: #ffffff;
+      color: #111;
+      font-family: Arial, "Noto Sans KR", sans-serif;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .main-title {
+      font-size: 34px;
+      font-weight: 800;
+      text-align: center;
+      margin: 0 0 8px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      text-align: center;
+      margin: 0 0 42px;
+      color: #555;
+    }
+
+    .archive-list {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .archive-item {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 20px;
+      align-items: center;
+      padding: 18px;
+      border: 2px solid #111;
+      text-decoration: none;
+      color: #111;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .archive-item:hover {
+      transform: translateY(-3px);
+      background: #f4f4f4;
+    }
+
+    .archive-item img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      display: block;
+    }
+
+    .item-number {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .item-title {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+
+    .item-info {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    @media (max-width: 420px) {
+      body {
+        padding: 32px 18px;
+      }
+
+      .main-title {
+        font-size: 30px;
+      }
+
+      .archive-item {
+        grid-template-columns: 90px 1fr;
+        gap: 16px;
+        padding: 15px;
+      }
+
+      .item-title {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <h1 class="main-title">STONE ARCHIVE</h1>
+    <p class="subtitle">수집된 돌의 기록</p>
+
+    <section class="archive-list">
+      <a class="archive-item" href="./1.html">
+        <img src="./stone1.jpeg" alt="CP부-43 이미지" />
+
+        <div>
+          <div class="item-number">st.001</div>
+          <div class="item-title">CP부-428-1</div>
+          <div class="item-info">
+            현무암<br />
+            쿠팡 구매 / 원산지 확인 불가
+          </div>
+        </div>
+      </a>
+
+      <a class="archive-item" href="./2.html">
+        <img src="./stone2.jpeg" alt="두 번째 돌 이미지" />
+
+        <div>
+          <div class="item-number">st.002</div>
+          <div class="item-title">CP부-428-2</div>
+          <div class="item-info">
+            현무암<br />
+            쿠팡구매 / 원산지 확인 불가
+          </div>
+        </div>
+      </a>
+       <a class="archive-item" href="./3.html">
+        <img src="./stone3.jpeg" alt="두 번째 돌 이미지" />
+
+        <div>
+          <div class="item-number">st.003</div>
+          <div class="item-title">CP부-429</div>
+          <div class="item-info">
+            현무암<br />
+            쿠팡구매 / 원산지 확인 불가
+          </div>
+        </div>
+      </a>
+
+       <a class="archive-item" href="./4.html">
+        <img src="./stone4.jpeg" alt="두 번째 돌 이미지" />
+
+        <div>
+          <div class="item-number">st.004</div>
+          <div class="item-title">CP부-429</div>
+          <div class="item-info">
+            현무암<br />
+            쿠팡구매 / 원산지 확인 불가
+          </div>
+        </div>
+      </a>
+
+       <a class="archive-item" href="./5.html">
+        <img src="./stone5.jpeg" alt="두 번째 돌 이미지" />
+
+        <div>
+          <div class="item-number">st.005</div>
+          <div class="item-title">JIP확-331-1</div>
+          <div class="item-info">
+            현무암<br />
+            제주국제공항구매 / 제주 천연석 가공
+          </div>
+        </div>
+      </a>
+
+      <a class="archive-item" href="./6.html">
+        <img src="./stone6.jpeg" alt="두 번째 돌 이미지" />
+
+        <div>
+          <div class="item-number">st.006</div>
+          <div class="item-title">JIP확-331-2</div>
+          <div class="item-info">
+            현무암<br />
+            제주국제공항구매 / 제주 천연석 가공
+          </div>
+        </div>
+      </a>
+<a class="archive-item" href="./7.html">
+        <img src="./stone7.jpeg" alt="두 번째 돌 이미지" />
+
+        <div>
+          <div class="item-number">st.007</div>
+          <div class="item-title">JIP확-331-3</div>
+          <div class="item-info">
+            현무암<br />
+            제주국제공항구매 / 제주 천연석 가공
+          </div>
+        </div>
+      </a>
+
+
+      <a class="archive-item" href="./8.html">
+        <img src="./stone8.jpeg" alt="두 번째 돌 이미지" />
+
+        <div>
+          <div class="item-number">st.008</div>
+          <div class="item-title">JIP확-331-4</div>
+          <div class="item-info">
+            현무암<br />
+            제주국제공항구매 / 제주 천연석 가공
+          </div>
+        </div>
+      </a>
+
+      <a class="archive-item" href="./9.html">
+        <img src="./stone9.jpeg" alt="두 번째 돌 이미지" />
+
+        <div>
+          <div class="item-number">st.009</div>
+          <div class="item-title">MD미-504</div>
+          <div class="item-info">
+            현무암 모형<br />
+            제작 / 현무암 만들기 키트
+          </div>
+        </div>
+      </a>
+
+
+    </section>
+  </main>
+</body>
+</html>
