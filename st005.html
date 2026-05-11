@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JIP확-331-1</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", sans-serif;
+      background: #f7f7f4;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 36px;
+      border-top: 1px solid #999;
+      padding-top: 20px;
+    }
+
+    .question {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 28px 0 18px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 10px;
+      background: #fff;
+      border: 1px solid #222;
+      font-size: 16px;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e9e9e4;
+    }
+
+    .result {
+      display: none;
+      margin-top: 28px;
+      padding: 18px;
+      border: 1px solid #222;
+      background: #fff;
+    }
+
+    .bar-wrap {
+      margin: 14px 0;
+    }
+
+    .label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .bar {
+      height: 14px;
+      background: #ddd;
+    }
+
+    .bar-inner {
+      height: 100%;
+      background: #222;
+    }
+
+    .note {
+      font-size: 14px;
+      color: #555;
+      margin-top: 18px;
+    }
+
+    .info {
+      margin-top: 28px;
+      display: none;
+    }
+
+    .row {
+      border-top: 1px solid #bbb;
+      padding: 12px 0;
+    }
+
+    .key {
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .final-note {
+      margin-top: 28px;
+      padding: 18px;
+      border: 1px solid #222;
+      background: #fff;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <img src="stone5.jpeg" alt="JIP학-331-1">
+
+    <h1>JIP확-331-1</h1>
+
+    <div class="question">이 돌은 제주 돌일까요?</div>
+
+    <button onclick="showResult()">제주 돌이다</button>
+    <button onclick="showResult()">제주 돌이 아니다</button>
+    <button onclick="showResult()">모르겠다</button>
+
+    <div class="result" id="result">
+      <h2>현재까지의 판단</h2>
+
+      <div class="bar-wrap">
+        <div class="label">
+          <span>제주 돌이다</span>
+          <span>23%</span>
+        </div>
+        <div class="bar">
+          <div class="bar-inner" style="width:23%;"></div>
+        </div>
+      </div>
+
+      <div class="bar-wrap">
+        <div class="label">
+          <span>제주 돌이 아니다</span>
+          <span>64%</span>
+        </div>
+        <div class="bar">
+          <div class="bar-inner" style="width:64%;"></div>
+        </div>
+      </div>
+
+      <div class="bar-wrap">
+        <div class="label">
+          <span>모르겠다</span>
+          <span>13%</span>
+        </div>
+        <div class="bar">
+          <div class="bar-inner" style="width:13%;"></div>
+        </div>
+      </div>
+
+      <p class="note">
+        이 비율은 돌의 출처를 증명하지 않습니다.<br>
+      </p>
+    </div>
+
+    <div class="info" id="info">
+      <h2>분류 정보</h2>
+
+      <div class="row">
+        <div class="key">채집지</div>
+        <div>제주 국제 공항 기념품샵</div>
+      </div>
+
+      <div class="row">
+        <div class="key">채집 방식</div>
+        <div>구매 / 16,000원</div>
+      </div>
+
+      <div class="row">
+        <div class="key">수집장소</div>
+        <div>제주 천연석 수집 코너 / 판매처 확인</div>
+      </div>
+
+      <div class="row">
+        <div class="key">특징</div>
+        <div>
+          연회색. 다공성. 가루가 많이 떨어짐. 내부에 큰 구멍이 있음.<br>
+          제주 돌처럼 보이기에 충분한 외형을 가짐.
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="key">크기</div>
+        <div>6.1 × 6.3 × 7.5cm</div>
+       </div>
+      
+
+      <div class="row">
+        <div class="key">무게</div>
+        <div>0.41kg</div>
+       </div>
+      
+
+
+      <div class="row">
+        <div class="key">분류</div>
+        <div>현무암</div>
+       </div>
+
+      <div class="row">
+        <div class="key">판정</div>
+        <div>제주 돌로 분류됨.</div>
+       </div>
+
+      <div class="row">
+        <div class="key">판정 근거</div>
+        <div>구매 장소, 판매명, 표면의 구멍, 색상.</div>
+       </div>
+
+      <div class="row">
+        <div class="key">판정 신뢰도</div>
+        <div>불명. 기준 없음.</div>
+       </div>
+
+      <div class="final-note">
+        번호가 부여되었으나, 이 돌은 번호 부여 전과 동일합니다.
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function showResult() {
+      document.getElementById("result").style.display = "block";
+      document.getElementById("info").style.display = "block";
+      document.getElementById("result").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
